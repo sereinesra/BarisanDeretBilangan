@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pola Bilangan</title>
+</head>
+<style type="text/css">
+	li a, .dropbtn {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 10px 20px;
+			text-decoration: none;
+			}
+			li a:hover, .dropdown:hover dropbtn {
+			background-color: #c85250;
+			transition: all 0.5s ease;
+			}
+			li.dropdown{
+				display: inline-block;
+			}
+	.AturanPola1{
+				width: 70%;
+				height: 30px;
+				background: lightgrey;
+				text-align: justify;
+				padding: 10px;
+				border-left: 2px double black;
+				border-right: 2px double black;
+				border-top: 2px double black;
+			}
+			.AturanPola2{
+				width: 70%;
+				height: 30px;
+				background: lightgrey;
+				text-align: justify;
+				padding: 10px;
+				border-left: 2px double black;
+				border-right: 2px double black;
+				border-bottom: 2px double black;
+			}
+			.RumusPolaBilanganGanjil{
+				width: 25%;
+				height: 25px;
+				background: lightgrey;
+				text-align: center;
+				padding: 5px;
+			}
+			.AturanPolaBilanganGenap1{
+				width: 60%;
+				height: 30px;
+				background: lightgrey;
+				text-align: justify;
+				padding: 10px;
+				border-left: 2px double black;
+				border-right: 2px double black;
+				border-top: 2px double black;
+			}
+			.AturanPolaBilanganGenap2{
+				width: 60%;
+				height: 30px;
+				background: lightgrey;
+				text-align: justify;
+				padding: 10px;
+				border-left: 2px double black;
+				border-right: 2px double black;
+				border-bottom: 2px double black;
+			}
+			.RumusPolaBilanganGenap{
+				width: 15%;
+				height: 25px;
+				background: lightgrey;
+				text-align: center;
+				padding: 5px;
+			}
+			.StadionOlahraga{
+				float: right;
+				margin-left: 50px;
+			}
+			.hapus-float{
+				clear: both;
+			}
+			.IstilahPolaBilangan{
+				width: 85%;
+				height: 30px;
+				background: lightgrey;
+				text-align: justify;
+				padding: 10px;
+				border-left: 2px double black;
+				border-right: 2px double black;
+				border-top: 2px double black;
+			}
+			.Istilah1{
+				width: 85%;
+				height: 30px;
+				background: lightgrey;
+				text-align: justify;
+				padding: 10px;
+				border-left: 2px double black;
+				border-right: 2px double black;
+			}
+			.Istilah2{
+				width: 85%;
+				height: 30px;
+				background: lightgrey;
+				text-align: justify;
+				padding: 10px;
+				border-left: 2px double black;
+				border-right: 2px double black;
+				border-bottom: 2px double black;
+			}
+			.PolaPersegi{
+				float: left;
+			}
+			.hapus-float{
+				clear: both;
+			}
+			.RumusPolaPersegi{
+				width: 15%;
+				height: 25px;
+				background: lightgrey;
+				text-align: center;
+				padding: 5px;
+			}
+			.RumusPolaPersegiPanjang{
+				width: 25%;
+				height: 25px;
+				background: lightgrey;
+				text-align: center;
+				padding: 5px;
+			}
+			.RumusPolaSegitiga{
+				width: 25%;
+				height: 25px;
+				background: lightgrey;
+				text-align: center;
+				padding: 5px;
+			}
+			.PolaPersegi{
+				float: left;
+				margin-right: 50px;
+			}
+			.float-kiri{
+				float: left;
+				margin-right: 100px;
+			}
+			
+</style>
+<body style="background: lightcyan; margin-top: 25px; margin-left: 100px; margin-right: 100px;">
+	<h1 style="font-size: 30px; text-align: center; margin-top: 30px; background-color: powderblue;">Belajar Mudah Materi Barisan dan Deret Bilangan</h1>
+		<p style="text-align: center; background-color: powderblue;">untuk Sekolah Menengah Pertama/Madrasah Tsanawiyah</p>
+		<br>
+	<div id="header">
+			<div class="main"></div>
+			<ul style="list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: lightslategray;">
+			<li style="float: left;"><a href="BarisanDeretBilangan.html">Beranda</a></li>
+			<li style="float: left;"><a href="tujuanpembelajaran.html">Tujuan Pembelajaran</a></li>
+			<li style="float: left;"><a href="polabilangan.html">Pola Bilangan</a></li>
+			<li style="float: left;"><a href="barisanbilangan.html">Barisan Bilangan</a></li>
+			<li style="float: left;"><a href="deretbilangan.html">Deret Bilangan</a></li>
+			<li style="float: left;"><a href="videopembelajaran.html">Video Pembelajaran</a></li>
+			<li style="float: left;"><a href="penerapan.html">Penerapan</a></li>
+			<li style="float: left;"><a href="profil.html">Profil</a></li>
+		</ul>
+		</div>
+		<br>
+<h2 style="text-align: center;">POLA BILANGAN</h2>
+		<br>
+		<div class="hapus-float"></div>
+		<img class="StadionOlahraga" src="Belajar Matematika Aktif dan Menyenangkan.jpg" width="200px">
+		<p style="text-align: justify;" style="margin-left: 20px;">Gambar 2. 1 memperlihatkan stadion olahraga yang memiliki 200 tempat duduk pada barisan paling depan di tribun barat. Setiap baris tempat duduk tersebut memiliki 12 kursi lebih banyak daripada baris di depannya. Berapa kapasitas penonton di tribun barat dalam stadion tersebut jika terdapat 50 baris tempat duduk?</p>
+		<p style="font-size: smaller; text-align: right;">Gambar 2. 1</p>
+		
+		<br>
+		<p style="text-align: justify;">Apabila dituliskan banyaknya tempat duduk pada setiap baris, maka diperoleh tabel sebagai berikut.</p>
+		<p style="text-align: center; font-size: smaller;">Tabel 2. 1</p>
+		<table style="margin: auto;" border="1" width="500px">
+			<thead>
+				<tr>
+					<th style="text-align: center;">Baris ke-</th>
+					<th>1</th>
+					<th>2</th>
+					<th>3</th>
+					<th>4</th>
+					<th>...</th>
+					<th>50</th>
+				</tr>	
+			</thead>
+			<tbody>
+				<tr style="text-align: center;">
+					<td>Banyak kursi</td>
+					<td>200</td>
+					<td>212</td>
+					<td>224</td>
+					<td>236</td>
+					<td>...</td>
+					<td>800</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<p style="text-align: justify;">Amati bilangan-bilangan 200, 212, 224, 236, …, 800. Bilangan-bilangan tersebut membentuk suatu himpunan atau kumpulan bilangan dengan pola tertentu. Pembentukan polannya dengan setiap suku berikutnya diperoleh dari suku sebelumnya lalu ditambah 12.</p>
+		<br>
+		<p style="text-align: justify;">Himpunan-himpunan bilangan yang juga membentuk pola bilangan tersebut antara lain sebagai berikut.
+		<p style="text-align: justify;">Himpunan bilangan asli = 1, 2, 3, 4, 5, ...</p>
+		<p style="text-align: justify;">Himpunan bilangan genap = 0, 2, 4, 6, 8, …</p>
+		<p style="text-align: justify;">Himpunan bilangan ganjil = 1, 3, 5, 7, 9, ...</p>
+		<p style="text-align: justify;">Himpunan bilangan kuadrat = 0, 1, 4, 9, 16, …</p>
+		<p style="text-align: justify;">Himpunan bilangan berpangkat tiga = 0, 1, 8, 27, 64, ...</p>
+		<br>
+		<p style="text-align: justify;">Bilangan-bilangan yang menjadi anggota dari himpunan tersebut membentuk pola bilangan karena mempunyai pola tertentu. Sebelum memahami materi mengenai macam-macam pola bilangan, kamu harus mengetahui istilah yang ada pada pola bilangan.</p>
+		<br>
+		<div style="text-align: center;" class="IstilahPolaBilangan"><strong>ISTILAH PADA POLA BILANGAN</strong></div>
+		<div class="Istilah1"> - Urutan bilangan = Suku (Dilambangkan dengan 𝑈)</div>
+		<div class="Istilah2"> - Urutan bilangan ke-n = Suku ke-n (Dilambangkan dengan 𝑈<sub>n</sub>)</div>
+		<br>
+		<p style="text-align: justify;">Pola bilangan terbagi menjadi lima macam, yaitu pola bilangan ganjil, pola bilangan genap, pola bilangan persegi, pola bilangan persegi panjang, pola bilangan segiitga, dan pola bilangan Fibonacci. Kamu perlu memahami pembagian pola berikut.</p>
+		<br>
+		<hr>
+
+		<h3 style="text-align: center;">POLA BILANGAN GANJIL</h3>
+		<br>
+		<p style="text-align: justify;">Perhatikan pola bilangan ganjil pada gambar di bawah ini.</p>
+		<img style="text-align: center;" src="Pola Bilangan Ganjil.png" width="500px">
+		<p style="font-size: smaller;">Gambar 2. 2 Pola Bilangan Ganjil</p>
+		<br>
+		<p style="text-align: justify;">Apakah kamu sudah memahami bagaimana pola yang terbentuk? Bagaimana bentuk pola ganjil tersebut?</p>
+		<p style="text-align: justify;">Perhatikanlah kembali pola berikut ini.</p>
+		<img src="Contoh Pola Bilangan Ganjil.png" width="200px">
+		<br>
+		<p style="text-align: justify;">Dari pola bilangan tersebut, dapat dilihat bahwa bilangan yang membentuk pola bilangan ganjil memiliki <strong>selisih dua angka</strong> antara bilangan yang satu <strong>dengan bilangan sebelumnya.</strong></p>
+		<br>
+		<p style="text-align: justify;">Berdasarkan contoh pola di atas, dapat disimpulkan uraian aturan pola bilangan ganjil sebagai berikut.</p>
+		<div class="AturanPola1">(1) Bilangan 1 sebagai bilangan awal.</div>
+
+		<div class="AturanPola2">(2) Bilangan selanjutnya memiliki selisih 2 dengan bilangan</div>
+		<br>
+		<p>Berikut rumus pola bilangan ganjil:</p>
+		<div class="RumusPolaBilanganGanjil"><strong>𝑈<sub>𝑛</sub> = 2𝑛 - 1</strong></div>
+		<br>
+		<hr>
+
+		<h3>CONTOH SOAL</h3>
+		<ol type="1">
+			<li>Dengan menggunakan rumus pola bilangan ganjil, carilah pola kedua, kelima, dan ketujuh!</li>
+			<p><strong>Jawab:</strong></p>
+			<ul>
+		<li>𝑈<sub>𝑛</sub> = 2𝑛 − 1
+			<p>𝑈<sub>2</sub> = 2(2) − 1</p>
+			<p>𝑈<sub>2</sub> = 3</p></li>
+		<li>𝑈<sub>𝑛</sub> = 2𝑛 − 1
+			<p>𝑈<sub>5</sub> = 2(5) − 1</p>
+			<p>𝑈<sub>5</sub> = 9</p></li>
+		<li>𝑈<sub>𝑛</sub> = 2𝑛 − 1
+			<p>𝑈<sub>7</sub> = 2(7) − 1</p>
+			<p>𝑈<sub>7</sub> = 13</p></li>
+		<p>Pola kedua, kelima, dan ketujuh berturut-turut adalah 3, 9, dan 13.</p>
+			</ul>
+		</ol>
+		<br>
+		<hr>
+
+		<h3 style="text-align: center;">POLA BILANGAN GENAP</h3>
+		<br>
+		<p style="text-align: justify;">Setelah mengetahui dan memahami pola bilangan ganjil, terdapat juga pola bilangan genap. Perhatikan pola bilangan genap di bawah ini.</p>
+		<img src="Pola Bilangan Genap.png" width="200px">
+		<br>
+		<p style="text-align: justify;">Dari pola bilangan genap di atas, dapat dilihat bahwa pola bilangan yang terbentuk juga sama seperti pola bilangan ganjil, yakni memiliki <strong>selisih dua angka</strong> antara bilangan yang satu <strong>dengan bilangan sebelumnya</strong>. Akan tetapi, yang membedakan antara pola bilangan ganjil dengan genap adalah permulaan bilangannya. Pahamilah aturan bilangan genap di bawah ini</p>
+		<div class="AturanPolaBilanganGenap1">(1) Bilangan 2 sebagai bilangan awal.</div>
+		<div class="AturanPolaBilanganGenap2">(2) Bilangan selanjutnya memiliki selisih 2 dengan bilangan sebelumnya.</div>
+		<br>
+		<p style="text-align: justify;">Berdasarkan aturan pola tersebut, dapat ditentukan rumus dari pola bilangan genap. Berikut rumus pola bilangan genap:</p>
+		<div class="RumusPolaBilanganGenap">𝑼𝒏 = 𝟐𝒏</div>
+		<br>
+		<hr>
+
+		<h3>CONTOH SOAL</h3>
+		<ol type="1">
+			<li style="text-align: justify;">Dengan menggunakan rumus pola bilangan genap, carilah pola kesembilan, pola kedua belas, pola kelima belas, pola ketujuh belas, dan pola kedua puluh!</li>
+			<p><strong>Jawab:</strong></p>
+			<ul>
+		<li>𝑈<sub>𝑛</sub> = 2𝑛
+			<p>𝑈<sub>2</sub> = 2(9)</p>
+			<p>𝑈<sub>2</sub> = 18</p></li>
+		<li>𝑈<sub>𝑛</sub> = 2𝑛 
+			<p>𝑈<sub>5</sub> = 2(12)</p>
+			<p>𝑈<sub>5</sub> = 24</p></li>
+		<li>𝑈<sub>𝑛</sub> = 2𝑛
+			<p>𝑈<sub>7</sub> = 2(15)</p>
+			<p>𝑈<sub>7</sub> = 30</p></li>
+		<li>𝑈<sub>𝑛</sub> = 2𝑛
+			<p>𝑈<sub>17</sub> = 2(17)</p>
+			<p>𝑈<sub>17</sub> = 34</p>
+		<li>𝑈<sub>𝑛</sub> = 2𝑛
+			<p>𝑈<sub>20</sub> = 2(20)</p>
+			<p>𝑈<sub>20</sub> = 40</p></li>
+		<p style="text-align: justify;">Pola kesembilan, kedua belas, kelima belas, ketujuh belas, dan kedua puluh bertueut-turut adalah 18, 24, 30, 34, dan 40.</p>
+			</ul>
+		</ol>
+		<br>
+		<hr>
+
+		<h3 style="text-align: center;">POLA BILANGAN PERSEGI</h3>
+		<br>
+		<p style="text-align: justify;">Selain dapat membentuk pola bilangan ganjil dan genap, pola bilangan pada matematika juga dapat membentuk pola persegi. Amati pola bilangan persegi pada gambar berikut.</p>
+		<img class="float-kiri" src="Pola Bilangan Persegi.png" width="200px">
+		<p class="hapus-float" style="font-size: smaller;">Gambar 2. 3 Pola Bilangan Persegi</p>
+		<p style="text-align: justify;">Dari gambar pola persegi di atas, dapatkah kamu mengetahui bagaimana rumus pola yang terbentuk?</p>
+		<br>
+		<p style="text-align: justify;">Perhatikanlah tabel di bawah ini untuk mengetahui rumus pola bilangan persegi yang terbentuk.</p>
+		<br>
+		<p style ="text-align: center; font-size: smaller;">Tabel 2. 2</p>
+		<table style="text-align: center; font-size: smaller;" align="center" border="1" width="300px">
+			<thead>
+				<tr>
+					<th>𝑈<sub>n</sub></th>
+					<th>Nilai</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+				<td>𝑈<sub>1</sub></td>
+				<td>1 = 1<sup>2</sup></td>
+				</tr> 
+				<tr>
+				<td>𝑈<sub>2</sub></td>
+				<td>4 = 2<sup>2</sup></td>
+				</tr>
+				<tr>
+				<td>𝑈<sub>3</sub></td>
+				<td>9 = 3<sup>2</sup></td>
+				</tr>
+				<tr>
+				<td>𝑈<sub>4</sub></td>
+				<td>16 = 4<sup>2</sup></td>
+				</tr>
+				<tr>
+				<td>...</td>
+				<td>...</td>
+				</tr>
+				<tr>
+				<td>𝑈<sub>n</sub></td>
+				<td>n<sup>2</sup></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+
+		<p style="text-align: justify;">Berdasarkan analisis pada tabel di atas, didapat rumus pola persegi yaitu:</p>
+		<div class="RumusPolaPersegi"><strong>𝑈<sub>n</sub> = 𝒏<sup>2</sup></strong></div>
+		<br>
+		<hr>
+		
+		<h3>CONTOH SOAL</h3>
+		<ol type="1">
+			<li>Perhatikan gambar pola di bawah ini!</li>
+			<p>Dengan menggunakan rumus pola bilangan persegi, hitunglah 3 pola setelahnya.</p>
+			<img src="2. 4.png" width="200px">
+			<p style="font-size: smaller;">Gambar 2. 4 Pola Persegi</p>
+			<p><b>Jawab:</b></p>
+			<ul>
+		<li>𝑈<sub>n</sub> = 𝑛<sup>2</sup>
+			<p>𝑈<sub>5</sub> = 5<sup>2</sup></p>
+			<p>𝑈<sub>5</sub> = 25</p>
+		<li>𝑈<sub>n</sub> = 𝑛<sup>2</sup>
+			<p>𝑈<sub>6</sub> = 6<sup>2</sup></p>
+			<p>𝑈<sub>6</sub> = 36</p></li>
+		<li>𝑈<sub>n</sub> = 𝑛<sup>2</sup>
+			<p>𝑈<sub>7</sub> = 7<sup>2</sup></p>
+			<p>𝑈<sub>7</sub> = 49</p></li>
+			</ul>
+		</ol>
+		<br>
+		<hr>
+
+		<h3 style="text-align: center;">POLA BILANGAN PERSEGI PANJANG</h3>
+		<br>
+		<p style="text-align: justify;">Pola bilangan pada matematika juga membentuk pola persegi panjang. Apa yang membedakan pola persegi panjang dengan pola persegi? Perhatikanlah gambar berikut.</p>
+		<img src="Pola Bilangan Persegi Panjang.png" width="400px">
+		<p style="font-size: smaller;">Gambar 2. 8 Pola Bilangan Persegi Panjang</p>
+		<br>
+		<p style="text-align: justify;">Bagaimana? Apakah kamu sudah mengetahui perumusan pola persegi panjang yang terbentuk?</p>
+		<br>
+		<p style="text-align: justify;">Amatilah tabel di bawah untuk lebih memahamhinya.</p>
+		<p style="text-align: center; font-size: smaller;">Tabel 2. 3</p>
+		<table style="text-align: center;" border="1" width="175px" align="center">
+			<thead>
+				<tr>
+					<th>𝑈<sub>n</sub></th>
+					<th>Nilai</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+				<td>𝑈<sub>1</sub></td>
+				<td>2 = 2 x 1</td>
+				</tr> 
+				<tr>
+				<td>𝑈<sub>2</sub></td>
+				<td>6 = 3 x 2</td>
+				</tr>
+				<tr>
+				<td>𝑈<sub>3</sub></td>
+				<td>12 = 4 x 3</td>
+				</tr>
+				<tr>
+				<td>𝑈<sub>4</sub></td>
+				<td>20 = 5 x 4</td>
+				</tr>
+				<tr>
+				<td>...</td>
+				<td>...</td>
+				</tr>
+				<tr>
+				<td>𝑈<sub>n</sub></td>
+				<td>(𝑛 + 1) 𝑛</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<p>Berikut ini rumus pola persegi panjang:</p>
+		<div class="RumusPolaPersegiPanjang"><b>𝑈<sub>n</sub> = (𝒏 + 𝟏) 𝒏</b></div>
+		<br>
+		<hr>
+
+		<h3>CONTOH SOAL</h3>
+		<ol type="1">
+			<li>Pola suku ke-7 pada pola bilangan persegi panjang adalah ...</li>
+			<p><strong>Jawab:</strong></p>
+			<p>𝑈<sub>7</sub> = (7 + 1) 7</p>
+			<p>𝑈<sub>7</sub> = 8 𝑥 7</p>
+			<p>𝑈<sub>7</sub> = 56</p>
+		</ol>
+		<br>
+		<hr>
+
+		<h3 style="text-align: center;">POLA BILANGAN SEGITIGA</h3>
+		<br>
+		<p style="text-align: justify;">Selain membentuk pola persegi dan persegi panjang, pola bilangan juga memmbentuk pola segitiga. Perhatikanlah gambar di bawah untuk memahami pola segitiga.</p>
+		<img src="Pola Bilangan Segitiga.png" width="200px">
+		<p style = "font-size: smaller;">Gambar 2. 10 Pola Bilangan Segitiga</p>
+		<p style="text-align: justify;">Setelah melihat gambar pola segitiga di samping, dapatkah kamu merumuskan bagaimana pola yang terbentuk? </p>
+		<br>
+		<p style="text-align: justify;">Perhatikanlah tabel di bawah untuk memahaminya lebih lanjut.</p>
+		<p style="font-size: smaller; text-align: center;">Tabel 2. 4</p>
+		<table style="text-align: center;" border="1" width="400px" align="center">
+			<thead>
+				<tr>
+					<th>𝑈<sub>𝑛</sub></th>
+					<th>Nilai</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+				<td>𝑈<sub>1</sub></td>
+				<td>1 = (1 + 1) x 1/2 = 2/2</td>
+				</tr> 
+				<tr>
+				<td>𝑈<sub>2</sub></td>
+				<td>3 = (2 + 1) x 2/2 = 6/2</td>
+				</tr>
+				<tr>
+				<td>𝑈<sub>3</sub></td>
+				<td>6 = (3 + 1) x 3/2 = 12/2</td>
+				</tr>
+				<tr>
+				<td>𝑈<sub>4</sub></td>
+				<td>10 = (4 + 1) x 4/2 = 20/2</td>
+				</tr>
+				<tr>
+				<td>...</td>
+				<td>...</td>
+				</tr>
+				<tr>
+				<td>𝑈<sub>𝑛</sub></td>
+				<td>(𝑛 + 1) x 𝑛/2</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+
+		<p style="text-align: justify;">Berikut rumus pola bilangan segitiga:</p>
+		<div class="RumusPolaSegitiga"><strong>(𝑛 + 1) x 𝑛/2</strong></div>
+		<br>
+		<hr>
+
+		<h3>CONTOH SOAL</h3>
+		<ol type="1">
+			<li style="text-align: justify;">Tentukan suku ke-12, suku ke-20, dan suku ke-35 pada pola bilangan segitiga!</li>
+			<p><strong>Jawab:</strong></p>
+			<ul>
+		<li>𝑈<sub>12</sub> = (12 + 1) 𝑥 12/2
+			<p>𝑈<sub>12</sub> = 13 𝑥 12/2</p>
+			<p>𝑈<sub>12</sub> = 78</p></li>
+		<li>𝑈<sub>20</sub> = (20 + 1) 𝑥 20/2
+			<p>𝑈<sub>20</sub> = 21 𝑥 20/2</p>
+			<p>𝑈<sub>20</sub> = 210</p></li>
+		<li>𝑈<sub>35</sub> = (35 + 1) 𝑥 35/2
+			<p>𝑈<sub>35</sub> = 36 𝑥 35/2</p>
+			<p>𝑈<sub>35</sub> = 630</p></li>
+		<p style="text-align: justify;">Suku ke-12, suku ke-20, dan suku ke-35 pada pola bilangan segitiga berturut-turut adalah 78, 210, dan 630.</p>
+			</ul>
+		</ol>
+		<br>
+		<hr>
+
+		<h3 style="text-align: center;">POLA BILANGAN FIBONACCI</h3>
+		<p style="text-align: justify;">Pola bilangan Fibonacci memiliki struktur pola yang berbeda dari pola-pola bilangan yang lain. Lihatlah contoh pola bilangan Fibonacci berikut.
+			<p style="text-align: center;">1, 1, 2, 3, 5, 8, 13, 21</p>
+		<br>
+		<p style="text-align: justify;">Dari pola tersebut, apakah kamu dapat melihat apa perbedaan dengan pola yang lain?
+		Perhatikan analisis pola Fibonacci di atas pada gambar di bawah ini.</p>
+		<img src="Pola Fibonacci.png" width="300px">
+		<br>
+		<p style="text-align: justify;">Berdasarkan pola di atas, terlihat bahwa pola bilangan Fibonnaci memiliki struktur yang sangat berbeda dari pola-pola yang lain. Apa itu perbedaannya? Perbedaan tersebut terletak pada asal dari suku-suku pola Fibonacci.</p>
+		<br>
+		<p style="text-align: justify;">Contoh, pada suku ketiga, terdapat angka 2. Angka 2 merupakan penjumlahan dari suku pertama yaitu 1 dan suku kedua yaitu 2. Selanjutnya, pola keempat berasal dari penjumlahan suku kedua dan ketiga. Pola kelima berasal dari penjumlahan suku ketiga dan keempat. Begitu seterusnya. Berdasarkan analisis tersebut, dapat disimpulkan bahwa Pola bilangan Fibonacci adalah barisan bilangan dengan nilai setiap sukunya merupakan penjumlahan dari dua suku sebelumnya. </p>
+		<br>
+		<hr>
+
+		<h3>CONTOH SOAL</h3>
+		<ol type="1">
+			<li style="text-align: justify;">Pada pola bilangan Fibonacci berikut, hitunglah tiga suku setelahnya.</li>
+			<p>0, 3, 4, 7, 11, …</p>
+			<p><strong>Jawab:</strong></p>
+			<p>3, 4, 7, 11, …</p>
+			<p style="text-align: center; font-size: smaller;">Tabel 2. 5</p>
+			<table style="text-align: center;" border="1" align="center" width="250px">
+			
+			<thead>
+				<tr>
+					<th>Nilai</th>
+					<th>Penjumlahan dari …</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>7</td>
+					<td>3 + 4</td>
+				</tr>
+				<tr>
+					<td>11</td>
+					<td>4 + 7</td>
+				</tr>
+				<tr>
+					<td>18</td>
+					<td>7 + 11</td>
+				</tr>
+				<tr>
+					<td>29</td>
+					<td>11 + 18</td>
+				</tr>
+				<tr>
+					<td>47</td>
+					<td>18 + 29</td>
+				</tr>
+				
+			</tbody>
+			</table>
+			<p style="text-align: justify;">Tiga suku setelah pola tersebut bertutut-turut adalah 18, 29, dan 47.</p>
+		</ol>
+		<br>
+		<hr>
+
+		<h3>LATIHAN</h3>
+		<p>Kerjakan latihan soal berikut dengan teliti dan tepat!</p>
+		<ol type="1">
+			<li>Diberikan pola sebagai berikut.
+				<p>2, 4, 6, 8, …, …, …</p>
+				<p>Tentukan 3 bilangan dari pola tersebut.</p></li>
+			<li>Dengan menggunakan rumus pola ganjil, berapa nilai suku ke-11?</li>
+			<li>Suatu bilangan memiliki pola sebagai berikut.
+				<p>1, 2, 9, 16, 25, 36, ...</p>
+				<p>Hitunglah pola bilangan ke-10 dalam pola bilangan persegi.</p></li>
+			<li>Perhatikan pola di bawah ini.
+				<p>Banyaknya lingkaran pada pola ke-9 adalah …</p></li>
+				<img src="2. 11.png" width="200px">
+				<p style="font-size: smaller;">Gambar 2. 11</p>
+		</ol>
+		<br>
+		<hr>
+
+		<h2 style="text-align: center;">RINGKASAN</h2>
+		<br>
+		<ul>
+			<li style="text-align: justify;">Pola bilangan adalah sekumpulan bilangan-bilangan yang membentuk suatu himpunan atau kumpulan bilangan dengan pola tertentu.</li>
+			<li>Pola bilangan meliputi:
+				<ol>
+					<li>Pola bilangan ganjil,</li>
+					<li>Pola bilangan genap,</li>
+					<li>Pola bilangan segitiga,</li>
+					<li>Pola bilangan persegi,</li>
+					<li>Pola bilangan persegi panjang, dan</li>
+					<li>Pola bilangan Fibonacci.</li>
+				</ol>
+
+			<li>Rumus-rumus pola bilangan</li>
+			<p style="text-align: center; font-size: smaller;">Tabel 2. 6 Rumus Pola Bilangan</p>
+			<table style="text-align: center;" border="1" align="center" width="250px">
+			<thead>
+				<tr><strong>
+					<th>Pola Bilangan</th>
+					<th>Rumus</th></strong>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Ganjil</td>
+					<td>𝑈<sub>𝑛</sub> = 2𝑛 – 1</td>
+				</tr>
+				<tr>
+					<td>Genap</td>
+					<td>𝑈<sub>𝑛</sub> = 2𝑛</td>
+				</tr>
+				<tr>
+					<td>Persegi</td>
+					<td>𝑈<sub>𝑛</sub> = 𝑛<sup>2</sup></td>
+				</tr>
+				<tr>
+					<td>Persegi Panjang</td>
+					<td>𝑈<sub>𝑛</sub> = 𝑛 (𝑛 + 1)</td>
+				</tr>
+				<tr>
+					<td>Segitiga</td>
+					<td>𝑈<sub>𝑛</sub> = (𝑛 + 1) x 𝑛/2</td>
+				</tr>
+			</tbody>
+			</table>
+		</ul>
+		<br>
+		<hr>
+
+		<h2 style="text-align: center;">EVALUASI</h2>
+		<br>
+		<ol type="A"> 
+			<li>Soal Objektif</li>
+			<p><strong>Pilihlah salah satu jawaban yang benar.</strong></p>
+			<ol type ="1" style="text-align: justify;">
+				<li >Diketahui pola bilangan 3, 6, 10, 15, .... Berapa nilai pola ke-18 ….</li>
+				<ol type ="a">
+					<li>171</li>
+					<li>162</li>
+					<li>153</li>
+					<li>144</li>
+				</ol>
+				<li>Perhatikan pola segitiga di samping! Banyaknya jumlah segitiga pada pola ke-26 adalah …</li>
+				<img src="Soal Pola Segitiga.png" width="200px">
+				<p style="font-size: smaller;">Gambar 2. 12</p>
+				<ol type="a">
+					<li>598</li>
+					<li>624</li>
+					<li>650</li>
+					<li>676</li>
+				</ol>
+			</ol>
+		<br>
+
+			<li>Soal Subjektif</li>
+			<p><strong>Jawablah dengan jelas dan benar.</strong></p>
+			<ol type="3">
+				<li style="text-align: justify;">Suatu pola bilangan 5, 11, 21, 35, …, jika rumus digunakan 𝑈<sub>𝑛</sub> = 2𝑛<sup>2</sup> + 3, maka pola ke-15 adalah ...</li>
+				<li>Tentukan 7 suku pertama dari suatu pola bilangan dengan rumus 5𝑛 − 2!</li>
+				<li>Apa yang kamu ketahui mengenai bilangan Fibonacci? Jelaskan dan beri contoh!</li>
+			</ol>	
+		</ol>
+		<br>
+		<hr>
+</body>
+</html>
